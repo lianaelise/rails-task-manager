@@ -1,0 +1,9 @@
+<h2>Task: <%= @task.title %></h2>
+<p>Details: <%= @task.details %></p>
+<p>Completed: <%= @task.complete %></p>
+
+<%= link_to "Edit Task", edit_path, class: "btn btn-primary"%>
+<%= link_to "Back to Task List", tasks_path, class: "btn btn-primary"%>
+<%= link_to "Delete", show_path,
+      method: :delete, class: "btn btn-danger"%>
+
